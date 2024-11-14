@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #333;
+        }
+        .about-text {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .testimonial-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .testimonial-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card img {
+            width: 50px;
+            height: 50px;
+        }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">HTML Learning Project</div>
+
+<div class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="container">
+
+    <div id="about" class="section-title">About This Project</div>
+    <p class="about-text">This project helps students learn HTML and CSS basics by building a functional webpage.</p>
+
+    <div id="projects" class="section-title">Project List</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Portfolio Website</td>
+                <td>Showcase your projects and skills.</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Personal Blog</td>
+                <td>A simple blogging platform.</td>
+                <td>In Progress</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="testimonials" class="section-title">Testimonials</div>
+    <p class="about-text">Challenge: Recreate this grid layout of testimonials using HTML and CSS.</p>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/50" alt="Reviewer Logo">
+            <h3>Reviewer One</h3>
+            <p>"This project taught me a lot about HTML and CSS. I feel much more confident now!"</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/50" alt="Reviewer Logo">
+            <h3>Reviewer Two</h3>
+            <p>"A challenging but rewarding experience. Highly recommended for beginners."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/50" alt="Reviewer Logo">
+            <h3>Reviewer Three</h3>
+            <p>"I was able to create a functional webpage by the end of this project!"</p>
+        </div>
+    </div>
+
+    <div id="contact" class="section-title">Contact Me</div>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
+
+</div>
+
+<div class="footer">© 2024 citycotihub. All rights reserved.</div>
+
+</body>
+</html>
