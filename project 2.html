@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .header, .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .form-section, .table-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .footer {
+            font-size: 14px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Student Enrollment Form</div>
+
+<div class="container">
+    <div class="form-section">
+        <form id="enrollmentForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="HTML Basics">HTML Basics</option>
+                    <option value="CSS Fundamentals">CSS Fundamentals</option>
+                    <option value="JavaScript Essentials">JavaScript Essentials</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="table-section">
+        <h2>Enrolled Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ayan Mohamed</td>
+                    <td>ayan@gmail.com</td>
+                    <td>HTML Basics</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ali Noor</td>
+                    <td>ali@gmail.com</td>
+                    <td>CSS Fundamentals</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sara Ahmed</td>
+                    <td>sara@gmail.com</td>
+                    <td>JavaScript Essentials</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="footer">© 2024 citycotihub. All rights reserved.</div>
+
+</body>
+</html>
