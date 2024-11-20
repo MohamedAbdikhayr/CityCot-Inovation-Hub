@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bile Software Engineer</title>
+    <!-----Style Section------>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        color: #333;
+        background-color: #f0f4f8;
+        line-height: 1.6;
+      }
+      h1, h2, h3, h4 {
+        color: #2d4059;
+      }
+      a {
+        color: #1f7a8c;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #ff8a5b;
+      }
+      nav {
+        background-color: #2d4059;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav a {
+        color: #ffffff;
+        margin: 0 1rem;
+        font-weight: bold;
+      }
+      header {
+        background-color: #2d4059;
+        color: #ffffff;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 1.5rem;
+      }
+      .header-content {
+        text-align: left;
+      }
+      .header-content h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      .header-content h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+      .contact-info {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+      }
+      .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #ff8a5b;
+        display: inline-block;
+      }
+      section {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .skills p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .skills p span {
+        background-color: #2d4059;
+        color: #ffffff;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+      }
+      .experience ul, .projects ul {
+        list-style-type: square;
+        padding-left: 1.5rem;
+      }
+      .experience ul li, .projects ul li {
+        margin: 0.5rem 0;
+      }
+      @media (min-width: 768px) {
+        main {
+          grid-template-columns: 1fr 1fr;
+        }
+        header {
+          padding: 2rem 10%;
+        }
+      }
+    </style>
+  </head>
+
+  <!----Navigation Section----->
+  <body>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#articles">Articles I Wrote</a>
+    </nav>
+
+       <!-----Header Section----->
+    <header>
+       
+      <div class="header-content">
+        <h1>Mohamed</h1>
+        <h2>Software Engineer</h2>
+        <div class="contact-info">
+          <address>
+            123 Bosaso, Somalia<br />
+            +252-90-77777 | <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f99098949496969198949c9db99e94989095d79a9694">[email&#160;protected]</a>
+          </address>
+        </div>
+      </div>
+    </header>
+      <!------main Section-->
+    <main>
+      <section id="about">
+        <h3 class="section-title">About Me</h3>
+        <p>
+          I am a passionate software engineer with expertise in full-stack development, specializing in building scalable and efficient web applications. 
+          With a strong foundation in front-end and back-end technologies, 
+          I am committed to continuous learning and professional growth in the field of software engineering.
+        </p>
+      </section>
+
+      <section id="skills" class="skills">
+        <h3 class="section-title">Skills</h3>
+        <p>
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          <span>TypeScript</span> <span>React</span> <span>Agile</span>
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          <span>TypeScript</span> <span>React</span> <span>Agile</span>
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          <span>TypeScript</span> <span>React</span> <span>Agile</span>
+        </p>
+      </section>
+
+      <section id="education" class="education">
+        <h3 class="section-title">Education</h3>
+        <h4>Citycot University</h4>
+        <p>
+          January 2022 to May 2023<br />
+          B.S. in Computer Science - Focused on software engineering, data management, and IoT.
+        </p>
+      </section>
+
+      <section id="experience" class="experience">
+        <h3 class="section-title">Experience</h3>
+        <article>
+          <h4>Golis Telecom - Frontend Engineer</h4>
+          <p>March 2022 to Present</p>
+          <ul>
+            <li>Built web pages using HTML and CSS for simple layouts.</li>
+            <li>Styled components and content for responsive design across devices.</li>
+            <li>Assisted in updating website content and fixing layout issues.</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Citycot Innovation Hub - Intern</h4>
+          <p>August 2019 - March 2022</p>
+          <ul>
+            <li>Developed several basic Android applications.</li>
+            <li>Participated in projects and collaborated with a team on frontend design.</li>
+            <li>Mentored junior developers and innovation students in foundational programming skills.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" class="projects">
+        <h3 class="section-title">Projects</h3>
+        <article>
+          <h4>Personal Portfolio</h4>
+          <ul>
+            <li>Developed a personal portfolio to showcase my work and skills.</li>
+            <li>Used HTML, CSS, and JavaScript to create an interactive experience.</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Citycot Innovation Hub - Task Manager Project</h4>
+          <ul>
+            <li>Created a task manager application to help students and teams share tasks and collaborate.</li>
+            <li>Designed using HTML, CSS, and JavaScript for a simple and interactive interface.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="articles" class="articles">
+        <h3 class="section-title">Articles I Wrote</h3>
+        <ul>
+          <li><a href="https://medium.com/@austin_hill/the-future-of-web-development">The Future of Web Development</a></li>
+          <li><a href="https://medium.com/@austin_hill/understanding-react-hooks">Understanding React Hooks</a></li>
+        </ul>
+      </section>
+    </main>
+    <!-------Script Section------>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
