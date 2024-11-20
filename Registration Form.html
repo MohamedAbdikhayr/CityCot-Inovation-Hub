@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+   
+    <!-----style section--->
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ 
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.student-form {
+    margin-bottom: 20px;
+}
+
+.student-form h2 {
+    text-align: center;
+    color: #f71206;
+    
+
+}
+
+.student-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.student-form input,
+.student-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.student-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.student-form button:hover {
+    background-color: #0056b3;
+}
+
+ 
+.student-table h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+    </style>
+</head>
+
+<body>
+    <!----Form Section------>
+    <div class="container"
+    >
+     
+        <form class="student-form">
+            <br>
+            <br>
+            <br>
+
+            <h2>Student Registration</h2>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" placeholder="Enter student name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="course">Course:</label>
+            <select id="course" required>
+                <option value="" disabled selected>Select course</option>
+                <option value="html-css">HTML & CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <button type="button" id="save-button">Save</button>
+        </form>
+
+        <!----Table Section----->
+    
+        <div class="student-table">
+            <h2>Registered Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ahmed Mohamed</td>
+                        <td>20</td>
+                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f59c9498949d989091b59298949c99db969a98">[email&#160;protected]</a></td>
+                        <td>+25290*****</td>
+                        <td>Male</td>
+                        <td>HTML & CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Aisha Farah</td>
+                        <td>22</td>
+                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9af3fbf7fbf3e9f2fbdafdf7fbf3f6b4f9f5f7">[email&#160;protected]</a></td>
+                        <td>25290*****</td>
+                        <td>Female</td>
+                        <td>Python</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!----Script Section-------->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
