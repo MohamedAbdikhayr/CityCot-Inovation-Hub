@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main class="content px-3 py-2">
+    <div class="container-fluid">
+       
+
+        <!-- Student Registration Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Add Student</h5>
+            </div>
+            <div class="card-body">
+                <form id="studentForm">
+                    
+                    <!-- <StudentID, Student Name, Phone - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">ID</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-id-card-clip"  style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter StudentID" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Full Name</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user-tie"  style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Phone Number</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-phone-volume" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Phone" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Region, Town, School Name - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Address</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-sharp fa-solid fa-location-dot" style="color:red"></i></span>
+                                <select id="region" class="form-select" required>
+                                    <option>Bari</option>
+                                    <option>Sanaag</option>
+                                    <option>Karkaar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Town</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-sharp fa-solid fa-location-pin" style="color:red"></i></span>
+                                <select id="Town" class="form-select">
+                                    <option>Bosaso</option>
+                                    <option>Qardho</option>
+                                    <option>Garowe</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">School Name</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-school" style="color:red"></i></span>
+                                <input class="form-control" type="text" placeholder="Enter your school name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Birthdate, Place of Birth, Gender - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">DOB</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-duotone fa-solid fa-calendar-days" style="color:red"></i></span>
+                                <input type="date" class="form-control" id="dob" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">POB</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-duotone fa-solid fa-calendar-days" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Place of Birth" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Gender</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-duotone fa-solid fa-person-half-dress" style="color:red"></i></span>
+                                <select class="form-select">
+                                    <option>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons (Save, Update, Delete, Search) -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Registered Students Table -->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title">Registered Students</h6>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Region</th>
+                            <th>City</th>
+                            <th>Faculty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mohamed Ahmed</td>
+                            <td>123-456-7890</td>
+                            <td>Bari</td>
+                            <td>Bosaso</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Aisha Ali</td>
+                            <td>987-654-3210</td>
+                            <td>Sanag</td>
+                            <td>Garowe</td>
+                            <td>Midwifery</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ahmed Ali</td>
+                            <td>987-654-3210</td>
+                            <td>Sanag</td>
+                            <td>Garowe</td>
+                            <td>Health Science</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fatima Ali</td>
+                            <td>987-654-3210</td>
+                            <td>Sanag</td>
+                            <td>Garowe</td>
+                            <td>BBA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</main>
+</body>
+
+</html>

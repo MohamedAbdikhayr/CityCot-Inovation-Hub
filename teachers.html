@@ -1,0 +1,187 @@
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<title>Teachers</title>
+<body>
+
+    <title>Department</title>
+    <body>
+        <!-- Halkaan ka bilow samaynta formlkaaga -->
+        <main class="ontenet-px-3 py-3">
+            <div class="container-fluid">
+    
+              <!--Department Registration Form-->
+     
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Add Teacher</h5>
+                </div>
+                <div class="card-body">
+                    <form id="studentForm">
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <h5 class="card-title">ID</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-id-card-clip" style="color:red;"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Teacher ID" required>
+                        </div>
+                        </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">FullName</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user-tie" style="color:red "></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Teacher Name" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">Phone Number</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-phone-volume" style="color:red "></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Teacher Phone" required>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">Email</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope-circle-check" style="color:red "></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Teacher Email" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">Department Course</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-building" style="color:red "></i></span>
+                        <select id="course" class="form-select" required>
+                            <option>computer science</option>
+                            <option>medical Lab</option>
+                            <option>Clinical officer</option>
+                            <option>Electerical Enginering</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">Course Name</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-brands fa-leanpub" style="color:red "></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Course Name" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="card-title">Shift </h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-clock" style="color:red "></i></span>
+                        <select id="shift" class="form-select" required>
+                            <option>Shift</option>
+                            <option>Morning</option>
+                            <option>AfterNoon</option>
+                        </select>
+                    </div>
+                </div>
+                       
+           
+                    
+                    <!-- Buttons (Save, Update, Delete, Search) -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                        
+            <!-- Registered Teacher Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">Teacher Registration</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>TeacherName</th>
+                                <th>Teacher courses</th>
+                                <th>phone</th>
+                                <th>TeacherEmail</th>
+                                <th>courses Name</th>
+                                <th>shifts</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>jamiilo ahmed mohamed</td>
+                                <td>Health</td>
+                                <td>090777879</td>
+                                <td>jamilo0@gmail.com</td>
+                                <td>Health</td>
+                                <td>morning</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>jamaal ahmed mohamed</td>
+                                <td>Nursing</td>
+                                <td>090777899</td>
+                                <td>jamal0@gmail.com</td>
+                                <td>nursing</td>
+                                <td>morning</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>jamac ahmed mohamed</td>
+                                <td>communication</td>
+                                <td>090777860</td>
+                                <td>jamac0@gmail.com</td>
+                                <td>communication </td>
+                                <td>morning</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Rahma ahmed mohamed</td>
+                                <td>computer science</td>
+                                <td>090777810</td>
+                                <td>jamal0@gmail.com</td>
+                                <td>computer science</td>
+                                <td>morning</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                    </div>
+                </form>
+                </div>
+    
+    
+              </div>
+        
+    
+            </div>
+         
+
+    
+</body>
+
+</html>

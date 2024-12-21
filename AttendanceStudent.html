@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Doctor Registration Form -->
+
+<main class="content px-3 py-2">
+    <div class="container-fluid">
+       
+
+        <!-- Doctors Registration Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Subject Attendance</h5>
+            </div>
+            <div class="card-body">
+                <form id="Doctor Form">
+                    
+                    <!-- <DoctorFUllname, DoctorEmail, Title - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Courses</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-book-open-reader" style="color:red"></i></span>
+                                <select id="subject" class="form-select" required>
+                                    <option>Computer science</option>
+                                    <option>health</option>
+                                    <option>Communication</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Subject</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-graduation-cap" style="color:red"></i></span>
+                                <select id="subject" class="form-select" required>
+                                    <option>Computer science</option>
+                                    <option>health</option>
+                                    <option>Communication</option>
+
+                                </select>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Date</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-calendar" style="color:red"></i></span>
+                                    <input type="text" class="form-control" placeholder="jan-may-2025" required>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="card-title">Semester</h5>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-calendar-day"  style="color:red"></i></span>
+                                        <select id="semester" class="form-select" required>
+                                            <option>semester 1</option>
+                                            <option>semester 2</option>
+                                            <option>semester 3</option>
+                                            <option>semester 4</option>
+                                            <option>semester 5</option>
+                                            <option>semester 6</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 class="card-title">Gender</h5>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa-solid fa-venus-double"  style="color:red"></i></span>
+                                            <select id="shift" class="form-select" required>
+                                                <option>select</option>
+                                                <option>Female</option>
+                                                <option>Male</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h5 class="card-title">Subject Name</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-book" style="color:red"></i></span>
+                                                <input type="text" class="form-control" placeholder="DCS/234PHP Mysql" required>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h5 class="card-title">DOB</h5>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa-solid fa-calendar-minus" style="color:red"></i></span>
+                                                    <input type="date" class="form-control" id="dob" required>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="card-title">Attendance choose</h5>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fa-solid fa-user" style="color:red"></i></span>
+                                                        <select id="attendance" class="form-select" required>
+                                                            <option>Attendance wasn't submited yet</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+
+   
+              
+            
+          
+
+        <div class="card">
+            <div class="card-header">
+                Attendance List
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Student ID</th>
+                            <th>Name Student</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>Mohamed Ahmed Yuusuf</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>10001</td>
+                            <td> ALi Ahmed Hiirad</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>10002</td>
+                            <td>Rahma Abdi Farah</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>10003</td>
+                            <td>Hanaan Mascuud Jamac</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>10004</td>
+                            <td>Bilaal Mohamed Ahmed</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>10005</td>
+                            <td>Bile Cabdikhayr Cumar</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>10006</td>
+                            <td>Abdiqadir Yuusuf Guure</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>10007</td>
+                            <td>Cabdulaahi Abdiqadir Cumar</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                    <option>Leave</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
