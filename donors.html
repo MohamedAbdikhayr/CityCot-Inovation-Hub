@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Donors Registration Form -->
+
+    <main class="content px-3 py-2">
+        <div class="container-fluid">
+           
+    
+            <!-- Blood Donors Registration Form -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Blood Donors Registration</h5>
+                </div>
+                <div class="card-body">
+                    <form id="Doctor Form">
+                        
+                        <!-- <Donor FUllname, contact Number, blood Group- One Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Full Name</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-user" style="color:red"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Contact Number</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-regular fa-id-card" style="color:red"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Blood Group</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-droplet" style="color:red"></i></span>
+                                    <select id="Blood-Group" class="form-select" required>
+                                        <option>A+</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                        <option>A-</option>
+                                    </select>
+                               
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Age, Gender, Donars Date - One Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Age</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-arrow-up-1-9"  style="color:red"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter age" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Donation Date</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-regular fa-calendar" style="color:red"></i></span>
+                                    <input type="date" class="form-control" id="dob" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Gender</h5>
+                                <div class="input-group">
+                                    <span class="input-text-group"><i class="fa-solid fa-venus-mars" style="color:red"></i></span>
+                                    <select id="gender" class="form-select" required>
+                                        <option>Select</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                         
+    
+                        <!-- Address, medical History - Additional Description -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Address </h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-location-dot" style="color:red"></i></span>
+                                    <input type="text" class="form-control" type="text" placeholder="Enter Address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Medical History</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-book-medical" style="color:red"></i></span>
+                                    <textarea name="comment" class="form-control" placeholder="Describe Medical History" required></textarea>
+                                 
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Additional Description </h5>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-audio-description" style="color:red"></i></span>
+                                    <textarea name="comment" class="form-control" placeholder="Enter Additional Details" required></textarea>
+                                </div>
+                            </div>
+                           
+                        </div>
+    
+                        <!-- Buttons (Save, Update, Delete, Search) -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Registered somali blood Receivers Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">List of somali blood Donors</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Contact</th>
+                                <th>Blood Group</th>
+                                <th>Receiver Date</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jaamac cabdikhayr</td>
+                                <td>090-6012345</td>
+                                <td>A+</td>
+                                <td> 09-01-2024</td>
+                             </tr>
+                             <tr>
+                                <td>2</td>
+                                <td>caaliyo kamaal</td>
+                                <td>090-4556677</td>
+                                <td>A+</td>
+                                <td> 09-09-2002</td>
+                             </tr>
+                             <tr>
+                                <td>3</td>
+                                <td>jamaal Cabdi</td>
+                                <td>090-5678877</td>
+                                <td>A+</td>
+                                <td> 09-01-2002</td>
+                             </tr>
+                             <tr>
+                                <td>4</td>
+                                <td>xaliimo Nuur </td>
+                                <td>090-6012345</td>
+                                <td>AB+</td>
+                                <td> 09-01-2023</td>
+                             </tr>
+                             <tr>
+                                <td>5</td>
+                                <td>Faysal Bashiir</td>
+                                <td>090-6012345</td>
+                                <td>A-</td>
+                                <td> 09-01-2012</td>
+                             </tr>
+                             <tr>
+                                <td>6</td>
+                                <td>Sacdiyo Cali</td>
+                                <td>090-5670912</td>
+                                <td>AB-</td>
+                                <td> 09-01-2004</td>
+                             </tr>
+                             <tr>
+                                <td>7</td>
+                                <td>Suhuur Farah</td>
+                                <td>090-7728766</td>
+                                <td>B+</td>
+                                <td> 09-01-2024</td>
+                             </tr>
+                             <tr>
+                                <td>8</td>
+                                <td>Hirsi Ibrahim</td>
+                                <td>090-7740954</td>
+                                <td>O+</td>
+                                <td> 09-01-2003</td>
+                             </tr>
+                               
+                       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

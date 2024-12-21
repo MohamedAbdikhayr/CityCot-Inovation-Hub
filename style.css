@@ -23,7 +23,6 @@ body {
     overflow-y: scroll;
     margin: 0;
     background-color: var(--bs-dark-bg-subtle);  
-    
 }
 
 a {
@@ -130,7 +129,6 @@ a.sidebar-link:hover {
 .avatar {
     height: 40px;
     width: 40px;
-    
 }
 
 .navbar-expand .navbar-nav {
@@ -156,7 +154,6 @@ a.sidebar-link:hover {
     margin-bottom: 24px;
     background: var(--bs-primary-bg-subtle);  
     border: none;
-    
 }
 
 .card-header {

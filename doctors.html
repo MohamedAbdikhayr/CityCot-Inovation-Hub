@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!-- Doctor Registration Form -->
+
+<main class="content px-3 py-2">
+    <div class="container-fluid">
+       
+
+        <!-- Doctors Registration Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Add New Doctor</h5>
+            </div>
+            <div class="card-body">
+                <form id="Doctor Form">
+                    
+                    <!-- <DoctorFUllname, DoctorEmail, Title - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Full Name</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Email</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Title</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-business-time" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Title" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Department, Experience, Contact Number - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Department</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-building" style="color:red"></i></span>
+                                <select id="Department" class="form-select" required>
+                                    <option>Surgeon</option>
+                                    <option>gynecologist</option>
+                                    <option>Male Doctor</option>
+                                    <option>Pathologists</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Experience in Years</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-regular fa-calendar-days" style="color:red"></i></span>
+                                <input class="form-control" type="text" placeholder="Enter Experience in Years" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Contact Number</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-phone" style="color:red"></i></span>
+                                <input class="form-control" type="text" placeholder="Enter Contact Number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Degree, Fees, Profile Photo - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Degree</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-graduation-cap" style="color:red"></i></span>
+                                <input type="text" class="form-control" type="text" placeholder="Enter Degree" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Fees</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-comment-dollar" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Fees" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Profile Photo</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-file" style="color:red"></i></span>
+                                <input type="file" class="form-control" placeholder="choose file" required>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <!-- Buttons (Save, Update, Delete, Search) -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Registered Doctor Table -->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title">List of Doctors</h6>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Title</th>
+                            <th>Department</th>
+                            <th>Experience</th>
+                            <th>Contact</th>
+                            <th>Fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td> Dr.cabdikhayr jamac cumar</td>
+                            <td>Dr.cabdikhayr23@gmail.com</td>
+                            <td>Surgeon</td>
+                            <td> surgery Doctor</td>
+                            <td>19 years</td>
+                            <td>0906765699</td>
+                            <td>$5000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dr.Nuur Jamal Hirsi</td>
+                            <td>Dr.nuurjamal038@gmail.com</td>
+                            <td>Pathologists</td>
+                            <td>Pathology</td>
+                            <td>8 years</td>
+                            <td>+1-008-566770000</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Drs.Rahma cumar Ahmed</td>
+                            <td>Drs.Rahma803@gmail.com</td>
+                            <td>gynecologist</td>
+                            <td>gynecology</td>
+                            <td>20 years</td>
+                            <td>0904874567</td>
+                            <td>$14500</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Drs.Xamdi Ahmed Bashiir</td>
+                            <td>Drs.Xamdi763@gmail.com</td>
+                            <td>Dentists</td>
+                            <td>Dentist</td>
+                            <td>17years</td>
+                            <td>+256-988-778565</td>
+                            <td>$4500</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Dr.Siciid Geedi Daahir</td>
+                            <td>Dr.SiciidDahir091@gmail.com</td>
+                            <td>Pancreatics</td>
+                            <td>Pancreas</td>
+                            <td>6 years</td>
+                            <td>0906554422</td>
+                            <td>$20000</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</main>
+           
+         
+    
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+        <!-- Patient Registration Form -->
+
+<main class="content px-3 py-2">
+    <div class="container-fluid">
+       
+
+        <!-- Patient Registration Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Patient Basic Information</h5>
+            </div>
+            <div class="card-body">
+                <form id="Doctor Form">
+                    
+                    <!-- <patient FUllname, Gender, Email- One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Full Name</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Gender</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-venus-double"  style="color:red"></i></span>
+                                <select id="gender" class="form-select" required>
+                                    <option>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Email</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="EnterEmail" required>
+                               
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Address,LastName,Age - One Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Current Address</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-sharp fa-solid fa-location-dot" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Current Address" required>
+                                 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Last name</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user"  style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Last Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Age </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-arrow-up-1-9" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Age" required>
+                                 
+                            </div>
+                        </div>  
+                    </div>
+
+                    <!-- contact Number,profile photo one-row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Contact Number </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-address-card" style="color:red"></i></span>
+                                <input type="text" class="form-control" type="text" placeholder="Enter Contact Number" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">profile Photo</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-file"  style="color:red"></i></span>
+                                <input type="file" class="form-control" placeholder="Choose File" required>
+                             
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Height </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-text-height" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Height"required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Blood Group </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-droplet" style="color:red"></i></span>
+                                <select id="bloodgroup" class="form-select" required>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">pulse </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-heart-pulse" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter pulse Rate"required>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Allergy </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-hand-dots" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Allergy Details"required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Weight </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-weight-scale" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Weight"required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Blood Pressure </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-heart-pulse" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Blood Pressure"required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Respiration </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-lungs" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Respiration Rate"required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Diet </h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-utensils"  style="color:red"></i></span>
+                                <select id="diet" class="form-select" required>
+                                    <option>Vegetation</option>
+                                    <option>Meat</option>
+                                    <option>Beans</option>
+                                    <option>corn</option>
+                                    <option>sorghum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="card-title">Additional Info</h5>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-circle-info" style="color:red"></i></span>
+                                <input type="text" class="form-control" placeholder="Optional"required>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+                    <!-- Buttons (Save, Update, Delete, Search) -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    
+   
+</body>
+
+</html>

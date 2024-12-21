@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citycot Univ</title>
+    <title>Shafici Hospital</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
@@ -20,39 +20,33 @@
         <aside id="sidebar" class="js-sidebar">
             <div >
                 <div class="sidebar-logo">
-                    <a href="#">Citycot Univ</a>
+                    <a href="#">Shafici Hospital</a>
                 </div>
                 <ul class="sidebar-nav">
                     <!-- Faculty Section -->
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#faculty" data-bs-toggle="collapse" aria-expanded="false">
-                            <i class="fa-solid fa-file-lines pe-2"></i> Faculty
+                            <i class="fa-solid fa-file-lines pe-2"></i> Doctors
                         </a>
-                        
                         <ul id="faculty" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                
-                                <a href="departmens.html" target="bile" class="sidebar-link">Department</a>
-                              
+                                <a href="doctors.html" target="contentFrame" class="sidebar-link">Add Doctor</a>
                             </li>
-                          
-                            <li class="sidebar-item">
-                                <a href="teachers.html" target="bile" class="sidebar-link">Teachers</a>
-                            </li>
+                             
                         </ul>
                     </li>
 
                     <!-- Students Section -->
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#students" data-bs-toggle="collapse" aria-expanded="false">
-                            <i class="fa-solid fa-sliders pe-2"></i> Students
+                            <i class="fa-solid fa-sliders pe-2"></i> Patient
                         </a>
                         <ul id="students" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="studentreg.html" target="bile" class="sidebar-link">Student Reg</a>
+                                <a href="patient.html" target="contentFrame" class="sidebar-link">Patient Reg</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="AttendanceStudent.html" target="bile" class="sidebar-link">Attendance</a>
+                                <a href="paitentlists.html" target="contentFrame" class="sidebar-link">Patient List</a>
                             </li>
                         </ul>
                     </li>
@@ -60,13 +54,18 @@
                     <!-- Bills Section -->
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#bills" data-bs-toggle="collapse" aria-expanded="false">
-                            <i class="fa-regular fa-user pe-2"></i> Bills
+                            <i class="fa-regular fa-user pe-2"></i> Blood Bank
                         </a>
                         <ul id="bills" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="Expense.html" target="bile" class="sidebar-link">Expenses</a>
+                                <a href="donors.html" target="contentFrame" class="sidebar-link">Donors</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="reciever.html" target="contentFrame" class="sidebar-link">Recievers</a>
                             </li>
                         </ul>
+
+                       
                     </li>
                 </ul>
             </div>
@@ -80,11 +79,11 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <img src="profile.jpeg" class="avatar img-fluid rounded" alt="Profile">
+                                <img src="profile2.jpg" class="avatar img-fluid rounded" alt="Profile">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                                <a href="profile.html" target="bile" class="sidebar-link">Profile</a>
-                                <a href="" class="sidebar-link">Logout</a>
+                                <a href="#" target="contentFrame" class="sidebar-link">Profile</a>
+                                <a href="#" class="sidebar-link">Logout</a>
                             </div>
                         </li>
                     </ul>
@@ -95,7 +94,7 @@
             <!-- Main Content Area (iframe for different pages) -->
             <main class="content px-3 py-2">
                 <div class="container-fluid">
-                    <iframe name="bile"  style="width: 100%; height: 80vh; border: none;"></iframe>
+                    <iframe name="contentFrame" style="width: 100%; height: 80vh; border: none;"></iframe>
                 </div>
             </main>
 
@@ -109,7 +108,7 @@
                         <div class="col-6 text-start">
                             <p class="mb-0">
                                 <a href="#" class="text-muted">
-                                    <strong>Eng.Mohamed Abdikhayr Omar</strong>
+                                    <strong>Eng.Bile</strong>
                                 </a>
                             </p>
                         </div>
